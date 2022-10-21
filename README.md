@@ -6,13 +6,15 @@
 
 //
 
-## Getting Started
+## Rodando o programa
 
 ### Dependências 
 
 Dependecies java etc
 
 ### Executando o programa
+
+## Patterns Utilizados
 
 ## Help
 
