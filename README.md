@@ -1,12 +1,36 @@
+# Trabalho Final de Orientação a Objetos
 
----
-layout: ../../layouts/PostLayout.astro
-title: "Tutorial"
-description: "Trabalho final - Com alguma coisa"
-author: "Victor Ryan"
-date: "20 Oct 2022"
-banner: "bg-yellow-200"
----
 
-# Trabalho-Final-OO2
-Repositório destinado ao projeto final da disciplina de Programação orientada a objetos II
+
+## Descrição
+
+//
+
+## Getting Started
+
+### Dependências 
+
+Dependecies java etc
+
+### Executando o programa
+
+## Help
+
+Any advise for common problems or issues.
+```
+command to run if program contains helper info
+```
+
+## Authors
+
+Victor Kruze Fiori [git](https://github.com/Kruzefiori)
+Samuel Canellas Ferreira [git](https://github.com/Samscuckoo-projects)
+Ryan Augusto Ribeiro [git](https://github.com/RyanForward)
+Vitoria Thais da Silva [git](https://github.com/vitori4th)
+
+
+## Histórico de versionamento
+
+* 0.1
+    * Initial Release
+    * Somente estrutura
