@@ -13,7 +13,7 @@ package br.unifei.imc.controller;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Trabalho Final de Orientação a Objetos II - jmdaiojfa");
+        System.out.println("Trabalho Final de Orientação a Objetos II ");
 
     }
 }

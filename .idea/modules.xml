@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Trabalho-Final-OO2.iml" filepath="$PROJECT_DIR$/.idea/Trabalho-Final-OO2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrabalhoFinal_calculator/TrabalhoFinal_calculator.iml" filepath="$PROJECT_DIR$/TrabalhoFinal_calculator/TrabalhoFinal_calculator.iml" />
+    </modules>
+  </component>
+</project>
