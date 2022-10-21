@@ -24,8 +24,11 @@ command to run if program contains helper info
 ## Authors
 
 Victor Kruze Fiori [git](https://github.com/Kruzefiori)
+
 Samuel Canellas Ferreira [git](https://github.com/Samscuckoo-projects)
+
 Ryan Augusto Ribeiro [git](https://github.com/RyanForward)
+
 Vitoria Thais da Silva [git](https://github.com/vitori4th)
 
 
