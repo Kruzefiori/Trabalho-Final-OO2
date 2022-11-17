@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         int tam = 10;//Não tem sentido pedir input já que é uma simulação de um sensor que percorre o solo, ele funciona enquanto faz a varredura
-        System.out.println("Initializing sensor!");
+        System.out.println("Initializing sensor!\n\n");
         Rng gen = new Rng();//Gerador de números aleatórios
         ArrayList<LeituraSolo> leituraSoloArrayList = gen.CriaValores(tam);//Arraylist  correspondente aos pontos que o
         // sensor reconheceria em um terreno passando pelo campo de tamanho Tam
@@ -30,7 +30,7 @@ public class Main {
             int fert = leituraSoloArrayList.get(x).getFertilizante();
             int ph = leituraSoloArrayList.get(x).getPh();
             ProblemaSolo tipoDoSolo = null;
-            System.out.println("O nível de Fertilizante da parte " + x + " eh: " + fert + "% --" + " O Ph eh: " + ph + "-- A umidade eh: " + umidade + "%\n");
+            System.out.println("O nível de Fertilizante da parte " + x + " eh: " + fert + "% --" + " O Ph eh: " + ph + "-- A umidade eh: " + umidade + "%");
             System.out.println("Identificando tipo de solo...");
             CriadorProblemaSolo cria = new CriadorProblemaSolo();
             TiposEstadoDoSolo type = new VerificaTipoSolo().retornaTipo(umidade, fert, ph);
