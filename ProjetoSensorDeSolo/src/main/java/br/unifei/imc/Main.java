@@ -9,9 +9,12 @@
 package br.unifei.imc;
 
 import br.unifei.imc.EstadoDoSolo.ProblemaSolo;
+import br.unifei.imc.EstadoDoSolo.TiposEstadoDoSolo;
 import br.unifei.imc.gerador.Rng;
 import br.unifei.imc.LeituraSolo.LeituraSolo;
+import br.unifei.imc.problemaSolo.CriadorProblemaSolo;
 import br.unifei.imc.problemaSolo.FactoryProblemaSolo;
+import br.unifei.imc.verificador.VerificaTipoSolo;
 
 import java.util.ArrayList;
 
@@ -21,25 +24,20 @@ public class Main {
         System.out.println("Initializing sensor!");
         Rng gen = new Rng();//Gerador de números aleatórios
         ArrayList<LeituraSolo> leituraSoloArrayList = gen.CriaValores(tam);//Arraylist  correspondente aos pontos que o
-        // sensor reconheceria em um terreno
-        for (int x = 0 ; x < tam ; x++){
-            System.out.println("O Fertilizante da parte " + x + " eh: " + leituraSoloArrayList.get(x).getFertilizante() + "%");
-            System.out.println("O PH da parte " + x + " eh: " + leituraSoloArrayList.get(x).getPh());
-            System.out.println("A umidade da parte " + x + " eh: " + leituraSoloArrayList.get(x).getUmidade()  + "%");
-            System.out.println("\n");
-            
-            //Identifica o problema do solo a partir do ponto X
-            //Regra:  fertilizante - humidade = x
-            //Factory para criar o solo (solo usa o Strategy para implementar o método "corrige")
-            //1 - se 40 <= x <= 60 - solo Ideal - não corrige nada
-            //2 - se 60 <= x (fertilizante muito acima) - Solo hipernutrido - corrige com água
-            //3 - se 40 >= x (água muito acima) - Solo hiperHumido - corrige com Ferti
-            // +...
-
+        // sensor reconheceria em um terreno passando pelo campo de tamanho Tam
+        for (int x = 0 ; x < tam ; x++) {
+            int umidade = leituraSoloArrayList.get(x).getUmidade();
+            int fert = leituraSoloArrayList.get(x).getFertilizante();
+            int ph = leituraSoloArrayList.get(x).getPh();
+            ProblemaSolo tipoDoSolo = null;
+            System.out.println("O nível de Fertilizante da parte " + x + " eh: " + fert + "% --" + " O Ph eh: " + ph + "-- A umidade eh: " + umidade + "%\n");
+            System.out.println("Identificando tipo de solo...");
+            CriadorProblemaSolo cria = new CriadorProblemaSolo();
+            TiposEstadoDoSolo type = new VerificaTipoSolo().retornaTipo(umidade, fert, ph);
+            tipoDoSolo = cria.devolveProblemaSolo(type); // Factory para criar o tipo de problema do Solo
+            //Faz a permanência no arquivo dos dados ATUAIS de leitura
+            tipoDoSolo.corrigeSolo();//Strategy
+            //Faz a permanência no arquivo dos dados PÓS CORREÇÃO
         }
-
-
-
-
     }
 }
