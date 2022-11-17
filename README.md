@@ -4,7 +4,7 @@
 
 ## Descrição
 
-//
+Projeto de um sensor de máquina agrícola que identifica o tipo de solo a sua frente e planeja a melhor maneira de corrigir para a plantação
 
 ## Rodando o programa
 
@@ -39,3 +39,7 @@ Vitoria Thais da Silva [git](https://github.com/vitori4th)
 * 0.1
     * Initial Release
     * Somente estrutura
+    
+* 0.5
+    * Estrutura inicial melhor planejada
+    * Patter de Strategy e Pattern de Factory quase implementados totalmente
