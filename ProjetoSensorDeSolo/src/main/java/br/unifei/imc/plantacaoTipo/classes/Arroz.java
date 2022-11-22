@@ -1,2 +1,10 @@
-package br.unifei.imc.plantacaoTipo.classes;public class Arroz {
+package br.unifei.imc.plantacaoTipo.classes;
+
+import br.unifei.imc.plantacaoTipo.Plantacao;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+public class Arroz extends Plantacao {
 }

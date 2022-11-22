@@ -7,12 +7,12 @@ public abstract class FactoryProblemaSolo {
 
     protected int humidade, ph, fertilizante;
 
-    public final ProblemaSolo devolveProblemaSolo (TiposEstadoDoSolo type){
+    public final ProblemaSolo devolveProblemaSolo (TiposEstadoDoSolo type ,int umidade , int ph, int fert){
         ProblemaSolo prob = null;
-        prob = criaProblemaSolo(type);
+        prob = criaProblemaSolo(type ,umidade ,  ph,  fert);
         return prob;
     }
 
-    abstract ProblemaSolo criaProblemaSolo(TiposEstadoDoSolo type);
+    abstract ProblemaSolo criaProblemaSolo(TiposEstadoDoSolo type , int umidade , int ph, int fert);
 
 }
