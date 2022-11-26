@@ -65,7 +65,7 @@ public class Main {
             tipoDoSolo = cria.devolveProblemaSolo(type,  umidade ,  ph,  fert); // Factory para criar o tipo de problema do Solo
             //TODO: Faz a permanência no arquivo dos dados ATUAIS de leitura
             tipoDoSolo.corrigeSolo();//Strategy
-            try { Thread.sleep (500); } catch (InterruptedException ex) {}
+            try { Thread.sleep (2000000); } catch (InterruptedException ex) {}
             //TODO:Faz a permanência no arquivo dos dados PÓS CORREÇÃO
 
             //TODO: excesso de uso de memória,armazena em txt e free? how?
