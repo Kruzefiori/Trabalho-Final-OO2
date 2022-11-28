@@ -18,7 +18,6 @@ public class EncharcadoBaseFertil implements ProblemaSolo {
 
     @Override
     public void corrigeSolo() {
-        @Override
         public void corrigeSolo(Plantacao plantacao) {
                 int umidadeIdeal = plantacao.getUmidade(),
                 int phIdeal = plantacao.getPh(),
