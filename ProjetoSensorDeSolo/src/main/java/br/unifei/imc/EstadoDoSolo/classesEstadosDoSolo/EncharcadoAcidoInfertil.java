@@ -20,9 +20,9 @@ public class EncharcadoAcidoInfertil implements ProblemaSolo {
             int phIdeal = plantacao.getPh(),
             int fertIdeal = plantacao.getFertilizante();
             
-            System.out.println("Umidade Ideal >" + umidadeIdeal + " - Umidade atual >" + umidadeIni);
-            System.out.println("PH Ideal >" + phIdeal + " - PH atual >" + phIni);
-            System.out.println(" Fertilizante Ideal >" + fertIdeal + " - Fertilizante atual >" + fertIni);
+            System.out.println("Umidade Ideal >" + umidadeIdeal + " - Umidade atual >" + umidade);
+            System.out.println("PH Ideal >" + phIdeal + " - PH atual >" + ph);
+            System.out.println(" Fertilizante Ideal >" + fertIdeal + " - Fertilizante atual >" + fert);
             System.out.println("Efetuando correções do solo:");
 
             if(umidadeIdeal < umidade){
