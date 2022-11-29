@@ -29,5 +29,8 @@ public class UmidoBaseFertil implements ProblemaSolo {
             if(umidadeIdeal > umidade){
                 System.out.println("Umidificando o solo...");
             }
+            if(phIdeal < ph){
+               System.out.println("Adicionando húmus...");
+            } 
        }
 }
