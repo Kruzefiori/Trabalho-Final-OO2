@@ -5,5 +5,7 @@ import lombok.Getter;
 import java.util.ArrayList;
 @Getter
 public abstract class Plantacao {
-    private int umidade, ph, fertilizante;
+    protected int umidade;
+    protected int ph;
+    protected int fertilizante;
 }
