@@ -1,6 +1,7 @@
 package br.unifei.imc.EstadoDoSolo.classesEstadosDoSolo;
 
 import br.unifei.imc.EstadoDoSolo.ProblemaSolo;
+import br.unifei.imc.plantacaoTipo.Plantacao;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,13 +12,6 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UmidoAcidoFertil implements ProblemaSolo {
-<<<<<<< Updated upstream
-    private int umidadeIni, phIni, fertIni;
-    @Override
-    public void corrigeSolo() {
-
-    }
-=======
     private int umidade, ph, fert;
        @Override
        public void corrigeSolo(Plantacao plantacao) {
@@ -38,5 +32,4 @@ public class UmidoAcidoFertil implements ProblemaSolo {
             }
             
        }
->>>>>>> Stashed changes
 }
