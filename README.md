@@ -25,13 +25,13 @@ command to run if program contains helper info
 
 ## Authors
 
-Victor Kruze FIori [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=black)](https://github.com/Kruzefiori)
+Victor Kruze FIori [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kruzefiori)
 
-Samuel Canellas Ferreira [git](https://github.com/Samscuckoo-projects)
+Samuel Canellas Ferreira [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Samscuckoo-projects)
 
-Ryan Augusto Ribeiro [git](https://github.com/RyanForward)
+Ryan Augusto Ribeiro [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RyanForward)
 
-Vitoria Thais da Silva [git](https://github.com/vitori4th)
+Vitoria Thais da Silva [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitori4th)
 
 
 ## Histórico de versionamento
