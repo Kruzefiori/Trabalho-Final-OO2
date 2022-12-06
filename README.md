@@ -1,6 +1,7 @@
 # Trabalho Final de Orientação a Objetos
 
 <img width="100px" src="Imagens/Unifei-logo.png" title="Universidade Federal de Itajubá">
+<img width="100px" src="Imagens/java-logo.png" title="Java">
 
 ## Descrição
 
