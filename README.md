@@ -1,6 +1,6 @@
 # Trabalho Final de Orientação a Objetos
 
-<img width="100px" src="/../imagens/imagem_2022-12-06_163815990-removebg-preview.png" title="Universidade Federal de Itajubá">
+<img width="100px" src="Imagens/imagem_2022-12-06_163815990-removebg-preview.png" title="Universidade Federal de Itajubá">
 
 ## Descrição
 
