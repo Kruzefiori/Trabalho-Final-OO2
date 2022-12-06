@@ -1,8 +1,9 @@
 # Trabalho Final de Orientação a Objetos
-
+<span>
 <img width="100px" src="Imagens/Unifei-logo.png" title="Universidade Federal de Itajubá">
 <img width="100px" src="Imagens/java-logo.png" title="Java">
-
+</span>
+   
 ## Descrição
 
 O projeto foi pensado para agregar o maior setor dentre as atividades econômicas brasileiras: o agronegócio. Cada vez mais empresas como New Holland e John Deere investem em tecnologias de automatização e melhoria no processo de plantio, e isso se deve ao fato de que, quanto mais a população mundial cresce, mais alimento é necessário, ou seja, cada vez mais a população necessita do que vem da terra, o que implica na necessidade de um melhor aproveitamento do solo, otimizando 100% do tempo e espaço, desde o plantio até a colheita. Com essa necessidade em mãos, nosso projeto promete automatizar a regularização do solo, identificando individualmente três características básicas: umidade, pH e fertilização de cada trecho de terra, e conforme os sensores identificam carências, o software calcula e ativa o módulo de ajuste (jatos de água, calcário ou fertilizante) para que o solo seja corrigido instantâneamente com base no tipo de plantio que será realizado naquele local.
