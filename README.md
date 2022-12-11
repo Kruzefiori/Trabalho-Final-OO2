@@ -44,3 +44,6 @@ Vitoria Thais da Silva [![Github](https://img.shields.io/badge/GitHub-100000?sty
 * 0.5
     * Estrutura inicial melhor planejada
     * Patter de Strategy e Pattern de Factory quase implementados totalmente
+    
+* 1.0
+   * Patterns Strategy e Factory implementados
