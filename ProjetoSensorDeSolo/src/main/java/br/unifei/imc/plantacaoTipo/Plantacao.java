@@ -1,7 +1,9 @@
 package br.unifei.imc.plantacaoTipo;
 
-import java.util.ArrayList;
+import lombok.Getter;
 
+import java.util.ArrayList;
+@Getter
 public abstract class Plantacao {
-    private int humidade, ph, fertilizante;
+    private int umidade, ph, fertilizante;
 }

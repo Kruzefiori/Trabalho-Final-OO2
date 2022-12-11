@@ -17,8 +17,8 @@ public class UmidoNeutroInfertil implements ProblemaSolo {
     private int umidade, ph, fert;
        @Override
        public void corrigeSolo(Plantacao plantacao) {
-            int umidadeIdeal = plantacao.getUmidade(),
-            int phIdeal = plantacao.getPh(),
+            int umidadeIdeal = plantacao.getUmidade();
+            int phIdeal = plantacao.getPh();
             int fertIdeal = plantacao.getFertilizante();
             
             System.out.println("Umidade Ideal >" + umidadeIdeal + " - Umidade atual >" + umidade);

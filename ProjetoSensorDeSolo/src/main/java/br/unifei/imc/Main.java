@@ -14,6 +14,8 @@ import br.unifei.imc.EstadoDoSolo.ProblemaSolo;
 import br.unifei.imc.EstadoDoSolo.TiposEstadoDoSolo;
 import br.unifei.imc.gerador.Rng;
 import br.unifei.imc.LeituraSolo.LeituraSolo;
+import br.unifei.imc.plantacaoTipo.Plantacao;
+import br.unifei.imc.plantacaoTipo.classes.*;
 import br.unifei.imc.problemaSolo.CriadorProblemaSolo;
 import br.unifei.imc.problemaSolo.FactoryProblemaSolo;
 import br.unifei.imc.verificador.VerificaTipoSolo;
@@ -44,7 +46,7 @@ public class Main {
         //petList.addActionListener(this);
         painel.add(petList);
         // conectar Jpanel a JFrame
-        frame.add(painel);
+        //frame.add(painel);
 
         // hacer visible JFrame
         frame.setVisible(true);
@@ -58,13 +60,18 @@ public class Main {
             int ph = leituraSoloArrayList.get(x).getPh();
             ProblemaSolo tipoDoSolo = null;
             int pos = x+1;
-            System.out.println("O nível de Fertilizante da parte " + pos + " eh: " + fert + "% --" + " O Ph eh: " + ph + "-- A umidade eh: " + umidade + "%");
+            System.out.println("O nível de Fertilizante da parte " + pos + " é: " + fert + "% --" + " O Ph é: " + ph + "-- A umidade é: " + umidade + "%");
             System.out.println("Identificando tipo de solo...");
             CriadorProblemaSolo cria = new CriadorProblemaSolo();
             TiposEstadoDoSolo type = new VerificaTipoSolo().retornaTipo(umidade, fert, ph);
             tipoDoSolo = cria.devolveProblemaSolo(type,  umidade ,  ph,  fert); // Factory para criar o tipo de problema do Solo
             //TODO: Faz a permanência no arquivo dos dados ATUAIS de leitura
-            tipoDoSolo.corrigeSolo();//Strategy
+            Plantacao m = new Milho();
+            Plantacao a = new Arroz();
+            Plantacao b = new Batata();
+            Plantacao c = new Cafe();
+            Plantacao s = new Soja();
+            tipoDoSolo.corrigeSolo(a);//Strategy
             try { Thread.sleep (2000000); } catch (InterruptedException ex) {}
             //TODO:Faz a permanência no arquivo dos dados PÓS CORREÇÃO
 
