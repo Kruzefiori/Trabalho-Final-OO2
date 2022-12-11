@@ -30,43 +30,33 @@ public class VerificaTipoSolo implements Observavel{
     public void cancelar(Observador obs) {observadores.remove(obs);}
 
     public TiposEstadoDoSolo retornaTipo(int humidade , int fert, int ph){
-        TiposEstadoDoSolo tipo;
+        var ref = new Object() {
+            TiposEstadoDoSolo tipo;
+        };
         if (humidade > 80){
             if(fert > 60){
                 if (ph < 5){
                     System.out.println("Tipo identificado como: ENCHARCADO_ACIDO_FERTIL\n");
-                    tipo = TiposEstadoDoSolo.ENCHARCADO_ACIDO_FERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.ENCHARCADO_ACIDO_FERTIL;
                 }
                 if (ph > 8){
                     System.out.println("Tipo identificado como: ENCHARCADO_BASE_FERTIL\n");
-                    tipo = TiposEstadoDoSolo.ENCHARCADO_BASE_FERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.ENCHARCADO_BASE_FERTIL;
                 }else {
                     System.out.println("Tipo identificado como: ENCHARCADO_NEUTRO_FERTIL\n");
-                    tipo = TiposEstadoDoSolo.ENCHARCADO_NEUTRO_FERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.ENCHARCADO_NEUTRO_FERTIL;
                 }
             }else {
                 if (ph < 5){
                     System.out.println("Tipo identificado como: ENCHARCADO_ACIDO_INFERTIL\n");
-                    tipo = TiposEstadoDoSolo.ENCHARCADO_ACIDO_INFERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.ENCHARCADO_ACIDO_INFERTIL;
                 }
                 if (ph > 8){
                     System.out.println("Tipo identificado como: ENCHARCADO_BASE_INFERTIL\n");
-                    tipo = TiposEstadoDoSolo.ENCHARCADO_BASE_INFERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.ENCHARCADO_BASE_INFERTIL;
                 }else {
                     System.out.println("Tipo identificado como: ENCHARCADO_NEUTRO_INFERTIL\n");
-                    tipo = TiposEstadoDoSolo.ENCHARCADO_NEUTRO_INFERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.ENCHARCADO_NEUTRO_INFERTIL;
                 }
             }
         }
@@ -74,78 +64,56 @@ public class VerificaTipoSolo implements Observavel{
             if(fert > 60){
                 if (ph < 5){
                     System.out.println("Tipo identificado como: SECO_ACIDO_FERTIL\n");
-                    tipo = TiposEstadoDoSolo.SECO_ACIDO_FERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.SECO_ACIDO_FERTIL;
                 }
                 if (ph > 8){
                     System.out.println("Tipo identificado como: SECO_BASE_FERTIL\n");
-                    tipo = TiposEstadoDoSolo.SECO_BASE_FERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.SECO_BASE_FERTIL;
                 }else {
                     System.out.println("Tipo identificado como: SECO_NEUTRO_FERTIL\n");
-                    tipo = TiposEstadoDoSolo.SECO_NEUTRO_FERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.SECO_NEUTRO_FERTIL;
                 }
             }else {
                 if (ph < 5){
                     System.out.println("Tipo identificado como: SECO_ACIDO_INFERTIL\n");
-                    tipo = TiposEstadoDoSolo.SECO_ACIDO_INFERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.SECO_ACIDO_INFERTIL;
                 }
                 if (ph > 8){
                     System.out.println("Tipo identificado como: SECO_BASE_INFERTIL\n");
-                    tipo = TiposEstadoDoSolo.SECO_BASE_INFERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.SECO_BASE_INFERTIL;
                 }else {
                     System.out.println("Tipo identificado como: SECO_NEUTRO_INFERTIL\n");
-                    tipo = TiposEstadoDoSolo.SECO_NEUTRO_INFERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.SECO_NEUTRO_INFERTIL;
                 }
             }
         }else {
             if(fert > 60){
                 if (ph < 5){
                     System.out.println("Tipo identificado como: UMIDO_ACIDO_FERTIL\n");
-                    tipo = TiposEstadoDoSolo.UMIDO_ACIDO_FERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.UMIDO_ACIDO_FERTIL;
                 }
                 if (ph > 8){
                     System.out.println("Tipo identificado como: UMIDO_BASE_FERTIL\n");
-                    tipo = TiposEstadoDoSolo.UMIDO_BASE_FERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.UMIDO_BASE_FERTIL;
                 }else {
                     System.out.println("Tipo identificado como: UMIDO_NEUTRO_FERTIL\n");
-                    tipo = TiposEstadoDoSolo.UMIDO_NEUTRO_FERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.UMIDO_NEUTRO_FERTIL;
                 }
             }else {
                 if (ph < 5){
                     System.out.println("Tipo identificado como: UMIDO_ACIDO_INFERTIL\n");
-                    tipo = TiposEstadoDoSolo.UMIDO_ACIDO_INFERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.UMIDO_ACIDO_INFERTIL;
                 }
                 if (ph > 8){
                     System.out.println("Tipo identificado como: UMIDO_BASE_INFERTIL\n");
-                    tipo = TiposEstadoDoSolo.UMIDO_BASE_INFERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.UMIDO_BASE_INFERTIL;
                 }else {
                     System.out.println("Tipo identificado como: UMIDO_NEUTRO_INFERTIL\n");
-                    tipo = TiposEstadoDoSolo.UMIDO_NEUTRO_INFERTIL;
-                    observadores.forEach(observador -> observador.atualiza(tipo));
-                    return tipo;
+                    ref.tipo = TiposEstadoDoSolo.UMIDO_NEUTRO_INFERTIL;
                 }
             }
         }
+        observadores.forEach(observador -> observador.atualiza(ref.tipo));
+        return ref.tipo;
     }
 }

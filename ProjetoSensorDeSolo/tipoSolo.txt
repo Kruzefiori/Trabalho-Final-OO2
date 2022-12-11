@@ -1,2 +1,2 @@
 O tipo do solo da ultima plantacao analisada é:
-UMIDO_BASE_FERTIL
+UMIDO_NEUTRO_FERTIL
