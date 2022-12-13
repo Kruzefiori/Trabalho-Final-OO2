@@ -39,7 +39,7 @@ public class VerificaTipoSolo implements Observavel{
                     System.out.println("Tipo identificado como: ENCHARCADO_ACIDO_FERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.ENCHARCADO_ACIDO_FERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: ENCHARCADO_BASE_FERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.ENCHARCADO_BASE_FERTIL;
                 }else {
@@ -51,7 +51,7 @@ public class VerificaTipoSolo implements Observavel{
                     System.out.println("Tipo identificado como: ENCHARCADO_ACIDO_INFERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.ENCHARCADO_ACIDO_INFERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: ENCHARCADO_BASE_INFERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.ENCHARCADO_BASE_INFERTIL;
                 }else {
@@ -60,13 +60,13 @@ public class VerificaTipoSolo implements Observavel{
                 }
             }
         }
-        if (humidade < 30){
+        else if (humidade < 30){
             if(fert > 60){
                 if (ph < 5){
                     System.out.println("Tipo identificado como: SECO_ACIDO_FERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.SECO_ACIDO_FERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: SECO_BASE_FERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.SECO_BASE_FERTIL;
                 }else {
@@ -78,7 +78,7 @@ public class VerificaTipoSolo implements Observavel{
                     System.out.println("Tipo identificado como: SECO_ACIDO_INFERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.SECO_ACIDO_INFERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: SECO_BASE_INFERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.SECO_BASE_INFERTIL;
                 }else {
@@ -92,7 +92,7 @@ public class VerificaTipoSolo implements Observavel{
                     System.out.println("Tipo identificado como: UMIDO_ACIDO_FERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.UMIDO_ACIDO_FERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: UMIDO_BASE_FERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.UMIDO_BASE_FERTIL;
                 }else {
@@ -104,7 +104,7 @@ public class VerificaTipoSolo implements Observavel{
                     System.out.println("Tipo identificado como: UMIDO_ACIDO_INFERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.UMIDO_ACIDO_INFERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: UMIDO_BASE_INFERTIL\n");
                     ref.tipo = TiposEstadoDoSolo.UMIDO_BASE_INFERTIL;
                 }else {

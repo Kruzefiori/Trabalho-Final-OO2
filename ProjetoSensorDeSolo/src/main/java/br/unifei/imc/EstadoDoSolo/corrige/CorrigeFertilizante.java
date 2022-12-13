@@ -13,6 +13,7 @@ public class CorrigeFertilizante implements Corrige{
         if(fert < fertIdeal){
             System.out.println("Adicionando fertilizante...");
         }
+        System.out.println("Correção finalizada.\n");
     }
 
 }
