@@ -1,6 +1,10 @@
 package br.unifei.imc.EstadoDoSolo.classesEstadosDoSolo;
 
 import br.unifei.imc.EstadoDoSolo.ProblemaSolo;
+import br.unifei.imc.EstadoDoSolo.corrige.Corrige;
+import br.unifei.imc.EstadoDoSolo.corrige.CorrigeFertilizante;
+import br.unifei.imc.EstadoDoSolo.corrige.CorrigePh;
+import br.unifei.imc.EstadoDoSolo.corrige.CorrigeUmidade;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,25 +19,22 @@ import br.unifei.imc.plantacaoTipo.Plantacao;
 @NoArgsConstructor
 public class UmidoAcidoInfertil implements ProblemaSolo {
     private int umidade, ph, fert;
-       @Override
-       public void corrigeSolo(Plantacao plantacao) {
-            int umidadeIdeal = plantacao.getUmidade(),
-            int phIdeal = plantacao.getPh(),
-            int fertIdeal = plantacao.getFertilizante();
-            
-            System.out.println("Umidade Ideal >" + umidadeIdeal + " - Umidade atual >" + umidade);
-            System.out.println("PH Ideal >" + phIdeal + " - PH atual >" + ph);
-            System.out.println(" Fertilizante Ideal >" + fertIdeal + " - Fertilizante atual >" + fert);
-            System.out.println("Efetuando correções do solo:");
-                
-            if(umidadeIdeal > umidade){
-                System.out.println("Umidificando o solo...");
-            }
-            if(phIdeal > ph){
-                System.out.println("Adicionando calcário...");
-            } 
-            if(fert < fertIdeal){
-                System.out.println("Adicionando fertilizante...");
-            }
-       }
+    private Corrige corrigeumidade;
+    private Corrige corrigeph;
+
+    private Corrige corrigeFert;
+    public UmidoAcidoInfertil(int umidade, int ph, int fert) {
+        this.umidade = umidade;
+        this.ph = ph;
+        this.fert = fert;
+        this.corrigeumidade = new CorrigeUmidade();
+        this.corrigeph = new CorrigePh() ;
+        this.corrigeFert = new CorrigeFertilizante();
+    }
+    @Override
+    public void corrigeSolo(Plantacao plantacao) {
+        this.corrigeumidade.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
+        this.corrigeph.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
+        this.corrigeFert.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
+    }
 }
