@@ -113,7 +113,7 @@ public class VerificaTipoSolo implements Observavel{
                 }
             }
         }
-        observadores.forEach(observador -> observador.atualiza(ref.tipo));
+        observadores.forEach(observador -> observador.atualiza(ref.tipo, humidade, fert, ph));
         return ref.tipo;
     }
 }

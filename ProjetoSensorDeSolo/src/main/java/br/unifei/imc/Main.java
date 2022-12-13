@@ -24,32 +24,6 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        String[] options = { "Arroz" , "Milho" , "Soja" , "Café" , "Batata" };//TODO: associate with enum
-        JFrame frame = new JFrame("Sensor de Solo");
-        frame.setSize(500,300);
-
-        // componente JPanel
-        JPanel painel = new JPanel();
-        painel.setSize(600   , 600);
-
-        // usamos este diseño para centrar los componentes de JPanel
-        painel.setLayout(new GridBagLayout());
-
-        // componente JTextField
-        JLabel miJLabel = new JLabel();
-        miJLabel.setText("Tipo de plantação:");
-
-        painel.add(miJLabel);
-
-        JComboBox petList = new JComboBox(options); //TODO: Verificar como dar input nesse valor e tentar
-        petList.setSelectedIndex(4);
-        //petList.addActionListener(this);
-        painel.add(petList);
-        // conectar Jpanel a JFrame
-        //frame.add(painel);
-
-        // hacer visible JFrame
-        frame.setVisible(true);
         int tam = 1000000;//Não tem sentido pedir input já que é uma simulação de um sensor que percorre o solo, ele funciona enquanto faz a varredura
         System.out.println("Initializing sensor!\n\n");
         Rng gen = new Rng();//Gerador de números aleatórios
