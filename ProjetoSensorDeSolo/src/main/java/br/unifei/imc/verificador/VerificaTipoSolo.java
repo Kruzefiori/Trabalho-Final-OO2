@@ -16,7 +16,7 @@ public class VerificaTipoSolo {
                     System.out.println("Tipo identificado como: ENCHARCADO_ACIDO_FERTIL\n");
                     return TiposEstadoDoSolo.ENCHARCADO_ACIDO_FERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: ENCHARCADO_BASE_FERTIL\n");
                     return TiposEstadoDoSolo.ENCHARCADO_BASE_FERTIL;
                 }else {
@@ -28,7 +28,7 @@ public class VerificaTipoSolo {
                     System.out.println("Tipo identificado como: ENCHARCADO_ACIDO_INFERTIL\n");
                     return TiposEstadoDoSolo.ENCHARCADO_ACIDO_INFERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: ENCHARCADO_BASE_INFERTIL\n");
                     return TiposEstadoDoSolo.ENCHARCADO_BASE_INFERTIL;
                 }else {
@@ -43,7 +43,7 @@ public class VerificaTipoSolo {
                     System.out.println("Tipo identificado como: SECO_ACIDO_FERTIL\n");
                     return TiposEstadoDoSolo.SECO_ACIDO_FERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: SECO_BASE_FERTIL\n");
                     return TiposEstadoDoSolo.SECO_BASE_FERTIL;
                 }else {
@@ -55,7 +55,7 @@ public class VerificaTipoSolo {
                     System.out.println("Tipo identificado como: SECO_ACIDO_INFERTIL\n");
                     return TiposEstadoDoSolo.SECO_ACIDO_INFERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: SECO_BASE_INFERTIL\n");
                     return TiposEstadoDoSolo.SECO_BASE_INFERTIL;
                 }else {
@@ -69,7 +69,7 @@ public class VerificaTipoSolo {
                     System.out.println("Tipo identificado como: UMIDO_ACIDO_FERTIL\n");
                     return TiposEstadoDoSolo.UMIDO_ACIDO_FERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: UMIDO_BASE_FERTIL\n");
                     return TiposEstadoDoSolo.UMIDO_BASE_FERTIL;
                 }else {
@@ -81,7 +81,7 @@ public class VerificaTipoSolo {
                     System.out.println("Tipo identificado como: UMIDO_ACIDO_INFERTIL\n");
                     return TiposEstadoDoSolo.UMIDO_ACIDO_INFERTIL;
                 }
-                if (ph > 8){
+                else if (ph > 8){
                     System.out.println("Tipo identificado como: UMIDO_BASE_INFERTIL\n");
                     return TiposEstadoDoSolo.UMIDO_BASE_INFERTIL;
                 }else {

@@ -1,0 +1,4 @@
+O tipo do solo da ultima plantacao analisada é:
+SECO_NEUTRO_FERTIL
+Seus atributos são:
+Umidade: 17 - Fertilizante: 74 - Ph: 7

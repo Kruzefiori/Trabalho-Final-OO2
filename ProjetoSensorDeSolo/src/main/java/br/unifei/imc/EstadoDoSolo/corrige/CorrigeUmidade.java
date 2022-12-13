@@ -16,6 +16,7 @@ public class CorrigeUmidade implements Corrige{
         if(umidadeIdeal > umidade){
             System.out.println("Umidificando o solo...");
         }
+        System.out.println("Correção finalizada.\n");
 
     }
 }

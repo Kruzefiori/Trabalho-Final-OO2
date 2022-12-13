@@ -65,17 +65,9 @@ public class Main {
             CriadorProblemaSolo cria = new CriadorProblemaSolo();
             TiposEstadoDoSolo type = new VerificaTipoSolo().retornaTipo(umidade, fert, ph);
             tipoDoSolo = cria.devolveProblemaSolo(type,  umidade ,  ph,  fert); // Factory para criar o tipo de problema do Solo
-            //TODO: Faz a permanência no arquivo dos dados ATUAIS de leitura
-            Plantacao m = new Milho();
             Plantacao a = new Arroz();
-            Plantacao b = new Batata();
-            Plantacao c = new Cafe();
-            Plantacao s = new Soja();
             tipoDoSolo.corrigeSolo(a);//Strategy
-            try { Thread.sleep (2000000); } catch (InterruptedException ex) {}
-            //TODO:Faz a permanência no arquivo dos dados PÓS CORREÇÃO
-
-            //TODO: excesso de uso de memória,armazena em txt e free? how?
+            try { Thread.sleep (2000); } catch (InterruptedException ex) {}
         }
     }
 }

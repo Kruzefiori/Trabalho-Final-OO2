@@ -14,6 +14,6 @@ public class CorrigePh implements Corrige{
         if(phIdeal < ph){
             System.out.println("Adicionando húmus...");
         }
-
+        System.out.println("Correção finalizada.\n");
     }
 }
