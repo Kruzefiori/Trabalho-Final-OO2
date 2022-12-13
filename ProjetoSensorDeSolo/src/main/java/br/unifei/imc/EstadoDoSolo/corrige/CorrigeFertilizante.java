@@ -9,8 +9,7 @@ public class CorrigeFertilizante implements Corrige{
         int fertIdeal = plantacao.getFertilizante();
 
         System.out.println(" Fertilizante Ideal >" + fertIdeal + " - Fertilizante atual >" + fert);
-        System.out.println("Efetuando correções do solo:");
-
+        System.out.println("Efetuando correção do solo:");
         if(fert < fertIdeal){
             System.out.println("Adicionando fertilizante...");
         }

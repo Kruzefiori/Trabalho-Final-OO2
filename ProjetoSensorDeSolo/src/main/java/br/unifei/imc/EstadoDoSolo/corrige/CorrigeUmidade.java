@@ -8,7 +8,8 @@ public class CorrigeUmidade implements Corrige{
         int umidadeIdeal = plantacao.getUmidade();
 
         System.out.println("Umidade Ideal >" + umidadeIdeal + " - Umidade atual >" + umidade);
-     
+
+        System.out.println("Efetuando correção do solo:");
         if(umidadeIdeal < umidade){
             System.out.println("Drenando o solo...");
         }
