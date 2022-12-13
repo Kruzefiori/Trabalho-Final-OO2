@@ -8,14 +8,18 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 import br.unifei.imc.plantacaoTipo.Plantacao;
+
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class EncharcadoAcidoFertil implements ProblemaSolo {
+
     private int umidade, ph, fert;
+
     private Corrige corrigeumidade;
     private Corrige corrigeph;
     public EncharcadoAcidoFertil(int umidade, int ph, int fert) {
@@ -29,6 +33,7 @@ public class EncharcadoAcidoFertil implements ProblemaSolo {
     public void corrigeSolo(Plantacao plantacao) {
         this.corrigeumidade.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
         this.corrigeph.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
+
 
     }
 }

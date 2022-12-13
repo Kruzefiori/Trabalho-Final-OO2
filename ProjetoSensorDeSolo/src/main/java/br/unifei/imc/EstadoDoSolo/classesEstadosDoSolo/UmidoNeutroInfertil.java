@@ -19,6 +19,7 @@ import br.unifei.imc.plantacaoTipo.Plantacao;
 @NoArgsConstructor
 public class UmidoNeutroInfertil implements ProblemaSolo {
     private int umidade, ph, fert;
+
     private Corrige corrigeumidade;
     private Corrige corrigeFert;
     public UmidoNeutroInfertil(int umidade, int ph, int fert) {
@@ -33,4 +34,5 @@ public class UmidoNeutroInfertil implements ProblemaSolo {
         this.corrigeumidade.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
         this.corrigeFert.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
     }
+
 }

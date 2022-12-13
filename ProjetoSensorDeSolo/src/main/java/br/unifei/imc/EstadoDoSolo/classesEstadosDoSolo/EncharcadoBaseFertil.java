@@ -31,6 +31,7 @@ public class EncharcadoBaseFertil implements ProblemaSolo {
     }
     @Override
     public void corrigeSolo(Plantacao plantacao) {
+
         this.corrigeumidade.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
         this.corrigeph.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
 

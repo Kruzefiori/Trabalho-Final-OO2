@@ -19,6 +19,7 @@ import br.unifei.imc.plantacaoTipo.Plantacao;
 @NoArgsConstructor
 public class UmidoBaseFertil implements ProblemaSolo {
     private int umidade, ph, fert;
+
     private Corrige corrigeumidade;
     private Corrige corrigeph;
 

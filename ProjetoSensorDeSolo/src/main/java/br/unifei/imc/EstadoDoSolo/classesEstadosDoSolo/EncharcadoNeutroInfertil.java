@@ -18,6 +18,7 @@ import br.unifei.imc.plantacaoTipo.Plantacao;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EncharcadoNeutroInfertil implements ProblemaSolo {
+
     private int umidade, ph, fert;
     private Corrige corrigeumidade;
     private Corrige corrigeFert;
@@ -33,4 +34,5 @@ public class EncharcadoNeutroInfertil implements ProblemaSolo {
         this.corrigeumidade.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
         this.corrigeFert.corrige_solo(plantacao, this.umidade,this.ph, this.fert);
     }
+
     }
