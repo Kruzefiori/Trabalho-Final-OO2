@@ -19,26 +19,26 @@ import java.io.PrintWriter;
 
 public class ObservaTipoSolo implements Observador{
 
-
     File file = new File("tipoSolo.txt");
 
 
     @Override
     public void atualiza(TiposEstadoDoSolo tipo, int um, int fert, int ph) {
-        //Cria um arquivo .txt com as informações de tipo, umidade, fertilizante e ph.
+        //Cria um arquivo .txt com as informações de tipo, umidade, fertilizante e ph. Sobrescreve o antigo, caso haja.
         PrintWriter pw = null;
         try {
             pw = new PrintWriter(file);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
+        pw.flush();
         pw.println("O tipo do solo da ultima plantacao analisada é:");
         pw.println(tipo);
         pw.println("Seus atributos são:\nUmidade: " + um + " - Fertilizante: " + fert + " - Ph: " + ph);
         pw.close();
 
 
-        //Documento .xml
+
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder documentBuilder;
         try {

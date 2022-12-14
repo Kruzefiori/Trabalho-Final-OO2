@@ -5,7 +5,7 @@ import br.unifei.imc.EstadoDoSolo.TiposEstadoDoSolo;
 
 public abstract class FactoryProblemaSolo {
 
-    protected int humidade, ph, fertilizante;
+    protected int umidade, ph, fertilizante;
 
     public final ProblemaSolo devolveProblemaSolo (TiposEstadoDoSolo type ,int umidade , int ph, int fert){
         ProblemaSolo prob = null;
