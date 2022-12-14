@@ -15,7 +15,6 @@ public class Rng {
         ArrayList<LeituraSolo> leituraSoloArrayList = new ArrayList<>();
         Random gerador = new Random(42);
         //imprime sequência de 10 números inteiros aleatórios entre 0 e 25
-        Random gerador = new Random(42);
         for (int i = 0; i < x; i++) {
             LeituraSolo leituraSoloValues = new LeituraSolo();
             leituraSoloValues.setUmidade((gerador.nextInt(101)));
