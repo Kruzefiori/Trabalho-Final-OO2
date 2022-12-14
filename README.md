@@ -13,9 +13,10 @@ O projeto foi pensado para agregar o maior setor dentre as atividades econômica
 
 Dependecies java etc
 
-### Executando o programa
-
 ## Patterns Utilizados
+* Factory
+* Strategy
+* Observer
 
 ## Help
 
